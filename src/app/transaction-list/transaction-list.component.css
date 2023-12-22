@@ -1,0 +1,10 @@
+/*Import material prebuilt-themes in Angular -> "styles"*/
+
+content {
+    text-align: center;
+}
+
+td {
+    cursor: pointer;
+}
+

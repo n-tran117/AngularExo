@@ -1,0 +1,16 @@
+content {
+  text-align: center;
+}
+
+.inputs {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+#result {
+    background-color: lightgray;
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

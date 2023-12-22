@@ -1,0 +1,13 @@
+content{
+    text-align : center;
+}
+
+.option {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.radio{
+    display : inline-block;
+    margin : 20px;
+}

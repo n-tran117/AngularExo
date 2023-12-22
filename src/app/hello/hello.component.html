@@ -1,0 +1,63 @@
+<content>
+
+    <h2>Exercise 1</h2>
+    <div>
+
+        <!-- Message display with dynamic setting -->
+        <p id="text" [style.font-family]="selectedFont" [style.font-size]="fontSize" [style.text-align]="textAlignment">
+            Hello {{ userName | uppercase }} !
+        </p>
+
+        <div class="option">
+            <!-- User name setter -->
+            <label for="userName">Name :</label>
+            <input type="text" id="userName" [(ngModel)]="userName" />
+        </div>
+
+
+        <div class="option">
+            <!-- Font family selector -->
+            <label for="font">Font family :</label>
+            <select id="font" [(ngModel)]="selectedFont">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Didot">Didot</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Geneva">Geneva</option>
+            </select>
+        </div>
+
+
+        <div class="option">
+            <!-- Font size setter -->
+            <label for="fontSize">Size :</label>
+
+            <input type="text" id="fontSize" [(ngModel)]="fontSize" (ngModelChange)="changeSize($event)" />
+        </div>
+
+
+        <div class="option">
+            <!-- Font alignment selector -->
+            <label>Alignment :</label>
+
+            <div class="radio">
+                <input type="radio" id="alignLeft" [(ngModel)]="textAlignment" value="left" name="alignment" />
+                <label for="alignLeft">Left</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="alignRight" [(ngModel)]="textAlignment" value="center" name="alignment" />
+                <label for="alignCenter">Center</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="alignCenter" [(ngModel)]="textAlignment" value="right" name="alignment" />
+                <label for="alignRight">Right</label>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</content>
